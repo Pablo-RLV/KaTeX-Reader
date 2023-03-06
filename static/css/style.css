@@ -5,6 +5,12 @@ body{
     float: left;
     min-width: 50%;
 }
+.centralize{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 #title{
     font-size: 30px;
     font-family: "Times New Roman", Times, serif;
@@ -16,9 +22,4 @@ body{
     border-color: #007BFF;
     color: #007BFF;
     background-color: azure;
-}
-.centralize{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
