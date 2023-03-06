@@ -3,6 +3,7 @@ body{
 }
 .left{
     min-width: 50%;
+    max-width: 50%;
 }
 .centralize{
     display: flex;
