@@ -9,8 +9,8 @@ let valor = 0.2;
 
 function setup() {
     createCanvas(OFFSET_X, OFFSET_Y, WEBGL);
-    img1 = loadImage('/static/img.jpg');
-    img2 = loadImage('/static/img2.jpeg');
+    img1 = loadImage('/static/img2.jpeg');
+    img2 = loadImage('/static/img.jpg');
 }
 
 function change_image() {
