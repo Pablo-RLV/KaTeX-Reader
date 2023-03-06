@@ -2,8 +2,8 @@ body{
     background-color: #c6dff9;
 }
 .left{
+    float: left;
     min-width: 50%;
-    max-width: 50%;
 }
 .centralize{
     display: flex;
