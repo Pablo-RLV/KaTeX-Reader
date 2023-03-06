@@ -1,4 +1,3 @@
-
 const OFFSET_X = window.innerWidth;
 const OFFSET_Y = window.innerHeight;
 const LADO_QUADRADO = OFFSET_Y/6;
@@ -6,13 +5,11 @@ let img1;
 let img2;
 let theta = 0;
 let valor = 0.2;
-
 function setup() {
     createCanvas(OFFSET_X, OFFSET_Y, WEBGL);
     img1 = loadImage('/static/img.jpeg');
     img2 = loadImage('/static/img2.jpg');
 }
-
 function change_image() {
     if (theta > 20) {
         texture(img2);
@@ -37,24 +34,16 @@ function draw() {
     pop();
 }
 
-
-
 function render() {
     var txin = $('#txin').val();
     var txout = svc_latex_render(txin);
     $('#txout').html(txout);
 }
-
 function svc_latex_render(str) {
-
     var textIn = str;
-
     if (str != null && str != undefined && str != '') {
-
         var textOut = textIn; // prepara string de saída
-
         textOut = textOut.replace(/(?:\r\n|\r|\n)/g, '<br>'); // substitui quebras de linha por <br>
-
         if (textIn.match(/\[latex\].*?\[\/latex\]/g)) {
             textIn.match(/\[latex\].*?\[\/latex\]/g).forEach((element) => { // faz loop nos matches []
                 element = element.replace('[latex]', '');
@@ -63,11 +52,8 @@ function svc_latex_render(str) {
                 textOut = textOut.replace('[latex]' + element + '[/latex]', newElement); // substitui no string de saída
             });
         }
-
         textOut = textOut.replace(/\[code\]/g, '<pre>'); // substitui [code] por <pre>
         textOut = textOut.replace(/\[\/code\]/g, '</pre>'); // substitui [/code] por </pre>
-
     }
-
     return textOut;
 }

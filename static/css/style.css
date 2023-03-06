@@ -13,6 +13,7 @@ body{
     color: #007BFF;
 }
 #txin{
+    float: left;
     border-radius: 10px;
     border-color: #007BFF;
     width: 80%;
