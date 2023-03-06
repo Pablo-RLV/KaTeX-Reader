@@ -17,3 +17,8 @@ body{
     color: #007BFF;
     background-color: azure;
 }
+.centralize{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
