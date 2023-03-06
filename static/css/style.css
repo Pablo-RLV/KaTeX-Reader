@@ -2,7 +2,6 @@ body{
     background-color: #c6dff9;
 }
 .left{
-    float: left;
     min-width: 50%;
 }
 .centralize{
@@ -22,10 +21,4 @@ body{
     border-color: #007BFF;
     color: #007BFF;
     background-color: azure;
-}
-#button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 }
